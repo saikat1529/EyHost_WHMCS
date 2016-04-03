@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/no_net_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_net"
+        android:textSize="@dimen/small_font"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/nonet_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center"
+        android:background="@drawable/solid_green"
+        android:text="@string/try_again"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/grey_light"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+    <!--
+    This layout for top side and includes
+    Submitted Field,
+    Department Field,
+    Priority Field,
+    Status Field
+    -->
+    <LinearLayout
+        android:id="@+id/get_ticket_top_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:weightSum="4"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/get_ticket_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/submit"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/get_ticket_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/get_ticket_subject_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/subject"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/get_ticket_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/get_ticket_department_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/dept"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/get_ticket_department"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/get_ticket_priority_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/prio"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/get_ticket_priority"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/get_ticket_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/status"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/get_ticket_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <!--
+      This layout is the bottom layout where two button is fixed
+      Reply Button,
+      Close Button
+      -->
+    <LinearLayout
+        android:id="@+id/get_ticket_bottom_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/get_ticket_reply"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:background="@drawable/solid_green"
+            android:text="@string/rep"
+            android:textSize="@dimen/very_small_font"
+            android:textStyle="bold"
+            android:layout_marginRight="2.5dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/get_ticket_close"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:background="@drawable/solid_green"
+            android:text="@string/cls"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:textSize="@dimen/very_small_font"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/get_ticket_back"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:background="@drawable/solid_green"
+            android:text="Back"
+            android:layout_marginLeft="2.5dp"
+            android:textSize="@dimen/very_small_font"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <!--
+    This will perform ticket reply and will show in list
+    -->
+    <ListView
+        android:id="@+id/get_reply_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/get_ticket_top_head"
+        android:padding="5dp"
+        android:layout_above="@id/get_ticket_bottom_head">
+    </ListView>
+
+</RelativeLayout>

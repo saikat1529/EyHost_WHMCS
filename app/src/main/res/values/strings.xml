@@ -1,0 +1,103 @@
+<resources>
+
+    <string name="app_name">EyHost Hosting Service</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--
+
+    @@@@@@@@@@@@@ BASE URL + USERNAME + PASSWORD @@@@@@@@@@@@@@@@
+
+    This link will change Base URL, API username and password
+    -->
+    <string name="base_url">http://portal.canalibd.com/includes/api.php</string>
+    <string name="base_name">api</string>
+    <string name="base_pass">69a51bb1a6759bf3800b09a88023f64c</string>
+
+    <!-- To change the font -->
+    <string name="font">Comfortaa-Regular.ttf</string>
+
+    <!--This part will be used in Dashboard-->
+    <string name="avail_cr">Available Credit(s)</string>
+    <string name="tot_ser">Total Services</string>
+    <string name="tot_dom">Total Domains</string>
+    <string name="tot_inv">Total Invoices</string>
+    <string name="tot_tck">Total Tickets</string>
+
+    <!--This part will be used in Dialog Message-->
+    <string name="ok">Ok</string>
+    <string name="wrg_crd">You have entered wrong credential. Please check and try again.</string>
+
+    <!-- This part will be used in Domain Details -->
+    <string name="dom">Domains</string>
+    <string name="det">Details:-</string>
+    <string name="reg_date">Registration Date:</string>
+    <string name="fir_pay">First Payment Amount:</string>
+    <string name="rec_amn">Recurring Amount:</string>
+    <string name="bil_cyc">Billing Cycle:</string>
+    <string name="nx_date">Due Date:</string>
+    <string name="pay_met">Payment Method:</string>
+
+    <!-- This part will be used in Domain List -->
+    <string name="status">Status:</string>
+    <string name="vw_det">View Details</string>
+
+    <!-- This part will be used in Get Ticket -->
+    <string name="submit">Submitted:</string>
+    <string name="dept">Department:</string>
+    <string name="prio">Priority:</string>
+    <string name="rep">Reply</string>
+    <string name="cls">Close</string>
+
+    <!-- This part will be used in Invoice Details -->
+    <string name="inv">Invoice</string>
+    <string name="inv_dt">Invoice Date:</string>
+    <string name="inv_type">Type:</string>
+    <string name="desc">Description:</string>
+    <string name="amnt">Amount:</string>
+    <string name="due_date">Due Date:</string>
+
+    <!-- This part will be used in Invoice List -->
+    <string name="prc">Price:</string>
+    <string name="inv_no">Invoice No:</string>
+
+    <!-- This part will be used in Login -->
+    <string name="username">Username/Email</string>
+    <string name="pass">Password</string>
+    <string name="login">Sign In</string>
+
+    <!-- This part will be used in Navigation Menu -->
+    <string name="dash">Dashboard</string>
+    <string name="my_ser">My Services</string>
+    <string name="my_dom">My Domains</string>
+    <string name="my_inv">My Invoices</string>
+    <string name="my_tck">My Tickets</string>
+    <string name="op_tck">Open Ticket</string>
+    <string name="logout">Sign Out</string>
+
+    <!-- This part will be used in No Net Message -->
+    <string name="no_net">No Internet Access. Please Try Again Later.</string>
+    <string name="try_again">Try Again</string>
+
+    <!-- This part will be used in Open Ticket -->
+    <string name="subject">Subject</string>
+    <string name="sub">Submit</string>
+    <string name="sel_prio">Select Priority</string>
+    <string name="sel_dept">Select Department</string>
+    <string name="wrt_msg">Write your message here</string>
+    <string-array name="priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <!-- This part will be used in Profile -->
+    <string name="info">Information</string>
+    <string name="contact">Contact Details</string>
+    <string name="oth">Others</string>
+
+    <!-- This part will be used in Service Details -->
+    <string name="plan">Plan</string>
+    <string name="domain">Domain:</string>
+
+</resources>

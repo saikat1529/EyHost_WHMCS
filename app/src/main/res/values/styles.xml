@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/grey</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="CustomTextAppearance" parent="">
+        <item name="android:titleTextStyle">@style/CustomTextAppearance</item>
+    </style>
+
+    <style name="CustomTextAppearnce">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="ThemeOverlay.MyApp.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Parent theme sets colorControlNormal to textColorPrimary. -->
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+</resources>

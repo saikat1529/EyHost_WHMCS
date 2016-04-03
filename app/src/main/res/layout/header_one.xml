@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_header_back"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/header_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/very_small_font"
+        android:textStyle="italic"
+        android:layout_alignBottom="@id/header_image"
+        android:layout_alignRight="@id/header_image"
+        android:padding="5dp"
+        android:background="@drawable/rounded_black_solid_white"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_font"
+        android:layout_above="@id/header_company"
+        android:layout_alignRight="@id/header_company"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_black_solid_white"
+        />
+
+</RelativeLayout>

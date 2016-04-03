@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_dashboard"
+            android:title="@string/dash"
+            android:icon="@drawable/ic_dashboard" />
+        <item
+            android:id="@+id/nav_item_service"
+            android:title="@string/my_ser"
+            android:icon="@drawable/ic_service" />
+        <item
+            android:id="@+id/nav_item_domain"
+            android:title="@string/my_dom"
+            android:icon="@drawable/ic_domain" />
+        <item
+            android:id="@+id/nav_item_myinvoices"
+            android:title="@string/my_inv"
+            android:icon="@drawable/ic_invoice" />
+        <item
+            android:id="@+id/nav_item_ticket"
+            android:title="@string/my_tck"
+            android:icon="@drawable/ic_ticket" />
+        <item
+            android:id="@+id/nav_open_ticket"
+            android:title="@string/op_tck"
+            android:icon="@drawable/ic_open_ticket" />
+        <item
+            android:id="@+id/nav_item_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_logout" />
+    </group>
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/single_line_green"
+        android:paddingBottom="10dp">
+
+        <!--<TextView
+            android:id="@+id/reply_ticket_submit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submitted: 12/02/2016 03:49"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/reply_ticket_submit_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department: Billing Desk"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/reply_ticket_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priority: High"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/reply_ticket_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Answered"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_font"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>-->
+
+        <EditText
+            android:id="@+id/reply_ticket_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:minLines="6"
+            android:gravity="start"
+            android:textColor="@color/grey"
+            android:hint="@string/wrt_msg"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reply_ticket_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/solid_green"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/sub"
+        android:textSize="@dimen/very_small_font"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</LinearLayout>

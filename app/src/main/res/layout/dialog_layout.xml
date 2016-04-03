@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This layout is for to define dialog message layout. It contain
+IMAGEVIEW AS ICON,
+TEXTVIEW AS MESSAGE,
+BUTTON AS ACTION
+for functional activity
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_grey"
+    android:padding="5dp">
+
+
+    <!-- View to show icon in dialog -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/incident"/>
+
+
+    <!-- view to show message in dialog -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wrg_crd"
+        android:gravity="center"
+        android:textSize="@dimen/small_font"
+        android:textColor="@color/white"
+        android:padding="5dp"/>
+
+
+    <!-- View to show action button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid_green"
+        android:layout_gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/med_font"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+</LinearLayout>

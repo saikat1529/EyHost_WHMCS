@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/grey_light">
+
+    <!--
+    This layour is the child view of domain list
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/only_stroke"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="3">
+        <!-- Domain Title -->
+        <TextView
+            android:id="@+id/domain_list_child_domain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/med_font"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <!-- This Layout will define due date, status and view details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <!-- This layout only define date & status -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:weightSum="2">
+                <!-- This layout for date -->
+                <TextView
+                    android:id="@+id/domain_list_child_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font"/>
+
+                <TextView
+                    android:id="@+id/domain_list_child_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font"/>
+            </LinearLayout>
+            <!-- This is for view details button -->
+            <Button
+                android:id="@+id/domain_list_view_details"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/solid_green"
+                android:text="@string/vw_det"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/very_small_font"
+                android:paddingRight="5dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

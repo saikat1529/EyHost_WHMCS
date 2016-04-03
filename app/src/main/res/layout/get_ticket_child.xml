@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <!--
+    This textview will show name and date
+    -->
+    <TextView
+        android:id="@+id/get_ticket_child_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/solid_green"
+        android:textSize="@dimen/very_small_font"/>
+
+    <!--
+    This textview will show message
+    -->
+    <TextView
+        android:id="@+id/get_ticket_child_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid_white"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textSize="@dimen/small_font"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

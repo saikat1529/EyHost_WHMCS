@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/grey_light"
+    android:layout_height="match_parent">
+
+
+    <!--
+    This view will show list of domains for user.
+    Child of this list is designed in separate view
+    -->
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="@color/white">
+    </ListView>
+
+    <TextView
+        android:id="@+id/no_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/small_font"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="30dp"/>
+
+</LinearLayout>

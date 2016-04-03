@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/grey_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--
+        This view is deisgned to show Invoice Title with exclusive Design
+        -->
+
+            <!-- Invoice Title -->
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/only_stroke"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/invoice_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/inv"
+                android:layout_weight="1"
+                android:background="@drawable/solid_green"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/invoice_details_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <!--
+        This view is static and only hold details title
+        -->
+        <TextView
+            android:id="@+id/invoice_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/det"
+            android:textSize="@dimen/big_font"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            />
+
+        <!--
+        This layout is for Invoice Date
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_details_invoice_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_dt"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_details_invoice_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!--
+        This layout is for Type
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_details_domain_registration_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inv_type"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_details_domain_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!--
+        This layout is for Description
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_det_dom_desc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_det_dom_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!--
+        This layout is for Amount
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_det_amount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amnt"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_det_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!--
+        This layout is for next due date
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_det_due_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/due_date"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_det_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!--
+        This layout is for payment method
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_det_pay_met_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_met"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_det_pay_met"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!--
+        This layout is for status
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/single_line">
+            <TextView
+                android:id="@+id/invoice_det_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textColor="@color/green"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/invoice_det_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/med_font"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

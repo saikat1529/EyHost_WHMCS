@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light">
+
+    <!--
+    This section is only for personal information. You will find
+    FULL NAME,
+    COMPANY NAME,
+    EMAIL ADDRESS,
+    CELL NO
+    fields here.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:weightSum="5">
+        <!-- Full Name View -->
+        <TextView
+            android:id="@+id/dash_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/green"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/big_font"
+            android:textStyle="bold"
+            />
+        <!-- Company Name View -->
+        <TextView
+            android:id="@+id/dash_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/med_font"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"/>
+        <!-- Email Address View -->
+        <TextView
+            android:id="@+id/dash_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/small_font"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+        <!-- Cell No View -->
+        <TextView
+            android:id="@+id/dash_cell_no"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/small_font"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+
+    <!--
+    This section is only for users Available Credits. You will find
+    TOTAL CREDIT
+    fields here.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@drawable/two_line_design">
+
+        <!-- Available Credit View -->
+        <TextView
+            android:id="@+id/dash_avl_cr_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:text="@string/avail_cr"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/med_font"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Total Credit View -->
+        <TextView
+            android:id="@+id/dash_avl_cr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/med_font"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+    <!--
+    This section is only for users Total scenario. You will find
+    TOTAL SERVICES + COUNT,
+    TOTAL DOMAINS + COUNT,
+    TOTAL INVOICES + COUNT,
+    TOTAL TICKETS + COUNT
+    fields here.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="4">
+
+        <!-- This view is for Total Services-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/solid_green">
+            <TextView
+                android:id="@+id/dash_tot_srv_count_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/tot_ser"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/dash_tot_srv_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <!-- This view is for Total Domains-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/solid_green">
+            <TextView
+                android:id="@+id/dash_tot_dom_count_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/tot_dom"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/dash_tot_dom_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <!-- This view is for Total Invoices-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/solid_green">
+            <TextView
+                android:id="@+id/dash_tot_inv_count_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/tot_inv"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/dash_tot_inv_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <!-- This view is for Total Tickets-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/solid_green">
+            <TextView
+                android:id="@+id/dash_tot_tck_count_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/tot_tck"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="left"/>
+            <TextView
+                android:id="@+id/dash_tot_tck_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/med_font"
+                android:textStyle="bold"
+                android:gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
